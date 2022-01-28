@@ -1,0 +1,13 @@
+{% extends 'articles\base.html' %}
+{% load static %}
+<title>{% block title %}Статьи{% endblock %}</title>
+    {% block content %}
+      <center><h1>Повышенние эффективности и работы механизированных линий и участков изготовления корпусных конструкций!</h1></center>
+          {% if latest_articles_list %}
+              {% for a in latest_articles_list %}
+                <a href="{% url 'Detail' a.id %}">{{a.article_title}}</a>
+              {% endfor %}
+          {% else %}
+            Статьи не найдены
+          {% endif %}
+    {% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'articles\base.html' %}
+{% load static %}
+    <title>{% block title %}Поэзия{% endblock %}</title>
+  {% block content %}
+  <body id="bg" style="background-image: url('{% static "img/fon.jpg" %}')";>
+    <div class="car">
+      <p><center><h2>Берёза</h2><br>
+        <h4>Белая берёза <br> 
+        Под моим окном <br>
+        Принакрылась снегом,<br> 
+        Точно серебром.<br>
+  
+        На пушистых ветках<br>
+        Снежною каймой<br>
+        Распустились кисти<br>
+        Белой бахромой.<br>
+        
+        И стоит берёза<br>
+        В сонной тишине,<br>
+        И горят снежинки<br>
+        В золотом огне.<br>
+        
+        А заря, лениво<br>
+        Обходя кругом,<br>
+        Обсыпает ветки<br>
+        Новым серебром.</h4><br>
+        1913 г.<br></center>
+      </p>
+    </div>
+  </body>
+  {% endblock content %}
